@@ -7,7 +7,7 @@ public class Application {
 	}
 	public static void main(String args[]){
 		Application client=new Application();
-		Bird bird1=new SparrowDecoratorTwo(new Sparrow());
+		Bird bird1=new SparrowDecorator(new Sparrow());
 		Bird bird2=new SparrowDecorator(bird1);
 		client.needBird(bird1);
 		client.needBird(bird2);
