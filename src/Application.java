@@ -1,7 +1,7 @@
 public class Application {
 	public void needBird(Bird bird){
 		int flyDistance=bird.fly();
-		System.out.println("ÕâÖ»ÄñÄÜ·ÉĞĞ"+flyDistance+"Ã×");
+		System.out.println("è¿™åªé¸Ÿèƒ½é£è¡Œ"+flyDistance+"ç±³");
 	}
 	public static void main(String args[]){
 		Application client=new Application();
