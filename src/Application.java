@@ -1,4 +1,3 @@
-
 public class Application {
 	public void needBird(Bird bird){
 		int flyDistance=bird.fly();
@@ -6,11 +5,14 @@ public class Application {
 	}
 	public static void main(String args[]){
 		Application client=new Application();
-		Bird sparrow=new Sparrow();
-		Bird sparrowDecorator1=new SparrowDecorator(sparrow);
-		Bird sparrowDecorator2=new SparrowDecorator(sparrowDecorator1);
-		client.needBird(sparrowDecorator1);
-		client.needBird(sparrowDecorator2);
+		Bird bird1=new SparrowDecoratorTwo(new Sparrow());
+		Bird bird2=new SparrowDecorator(bird1);
+		Bird bird3=new SparrowDecorator(bird2);
+		Bird bird4=new SparrowDecoratorTwo(bird3);
+		client.needBird(bird1);
+		client.needBird(bird2);
+		client.needBird(bird3);
+		client.needBird(bird4);
 	}
-
+	
 }
