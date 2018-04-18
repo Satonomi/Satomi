@@ -1,5 +1,5 @@
 public class SparrowDecorator extends Decorator{
-	public final int DISTANCE=50;
+	public final int DISTANCE=20;
 	SparrowDecorator(Bird bird){
 		super(bird);
 	}
